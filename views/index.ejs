@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Node.js App</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to the Node.js App</h1>
+        <img src="<%= bannerUrl %>" alt="Banner Image" style="width: 100%; max-height: 300px;">
+    </header>
+    <main>
+        <h2>Product List</h2>
+        <ul>
+            <% products.forEach(product=> { %>
+                <li>
+                    <h3>
+                        <%= product.name %>
+                    </h3>
+                    <p>
+                        <%= product.description %>
+                    </p>
+                    <p>Price: $<%= product.price %>
+                    </p>
+                </li>
+                <% }); %>
+        </ul>
+    </main>
+</body>
+
+</html>
