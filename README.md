@@ -31,7 +31,8 @@ nodejs-app/
     ```sql
     CREATE DATABASE node_js_app;
 
-  USE node_js_app;
+    USE node_js_app;
+    
     CREATE TABLE products (
         id INT AUTO_INCREMENT PRIMARY KEY,
         name VARCHAR(255) NOT NULL,
